@@ -397,7 +397,7 @@ static PyObject* GetDataDecimal(Cursor* cur, Py_ssize_t iCol)
     // all ASCII characters, we can ignore any multiple-byte characters.  Fortunately, if a
     // character is multi-byte all bytes will have the high bit set.
 
-    char* pch;
+    const char* pch;
     Py_ssize_t cch;
 
 #if PY_MAJOR_VERSION >= 3
